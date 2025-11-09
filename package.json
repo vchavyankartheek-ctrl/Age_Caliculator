@@ -1,0 +1,16 @@
+{
+  "name": "age-calculator",
+  "version": "1.0.0",
+  "homepage": "https://vchavyankartheek-ctrl.github.io/age_calculator",
+  "description": "Age Calculator application",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "echo \"Please configure your build step here\""
+  },
+  "author": "vchavyankartheek-ctrl",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

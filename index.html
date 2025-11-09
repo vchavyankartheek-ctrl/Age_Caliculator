@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+
+        <div class="card">
+            <div class="input-section">
+                <div class="input-button" id="dateInputButton">
+                    <span id="dateDisplay">00/00/0000</span>
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+
+                <div class="date-picker" id="datePicker">
+                    <select id="daySelect" class="date-dropdown">
+                        <option value="">Day</option>
+                    </select>
+
+                    <select id="monthSelect" class="date-dropdown">
+                        <option value="">Month</option>
+                    </select>
+
+                    <select id="yearSelect" class="date-dropdown">
+                        <option value="">Year</option>
+                    </select>
+                </div>
+
+                <button id="calculateBtn" class="calculate-btn" disabled>Calculate Age</button>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-content" id="resultContent"></div>
+                <div class="error-message" id="errorMessage" style="display: none;"></div>
+            </div>
+
+            <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
